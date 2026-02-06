@@ -1,50 +1,91 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout title="TMOV2 | Self-Taught Systems Administrator | Infrastructure Specialist">
+  <main style="max-width: 750px; margin: 2rem auto; padding: 2rem;">
+    <header style="text-align: center; margin-bottom: 2.5rem;">
+      <h1 style="font-size:2.8rem; font-weight:bold; letter-spacing:0.04em;">TMOV2</h1>
+      <h2 style="font-size:1.5rem; font-weight:600; margin:0.5rem 0;">Self-Taught Systems Administrator | Infrastructure Specialist</h2>
+      <p style="font-size:1.04rem; color:#38bdf8; margin-top:0.5rem;">
+        Building and managing 50+ self-hosted projects with a focus on privacy, automation, and efficiency
+      </p>
+    </header>
+    <section style="margin-bottom: 2rem;">
+      <h2>About</h2>
+      <p>
+        Self-taught sysadmin with hands-on experience managing complex infrastructure. Specializing in Linux server administration, Docker containerization, networking, and custom self-hosted solutions. Currently offering free consulting to small businesses while building my portfolio.
+      </p>
+    </section>
+    <section style="margin-bottom: 2rem;">
+      <h2>Skills</h2>
+      <ul style="columns:2; gap:2rem;">
+        <li>Linux Server Administration (Ubuntu/Debian/etc.)</li>
+        <li>Docker & Containerization</li>
+        <li>Networking (VPN, DNS, custom networks)</li>
+        <li>Cloud Infrastructure (Oracle Cloud, AWS, VPS management)</li>
+        <li>Storage Solutions (NAS, rclone, Google Drive integration)</li>
+        <li>Game Server Management (Modded BO3, Minecraft crossplay)</li>
+        <li>Custom Software Development</li>
+        <li>Web Development & Hosting</li>
+        <li>Automation & Scripting</li>
+        <li>Media Server Management</li>
+      </ul>
+    </section>
+    <section style="margin-bottom: 2rem;">
+      <h2>Featured Projects</h2>
+      <ol>
+        <li>
+          <strong>Game Update Tracker</strong><br />
+          Automated tracking system monitoring 5+ gaming sites for updates.<br />
+          Real-time notifications with direct download links.<br />
+          Custom web scraping and API integration.
+        </li>
+        <li style="margin-top:1rem;">
+          <strong>Multi-Server Infrastructure</strong><br />
+          50+ self-hosted projects across 2 VPS instances.<br />
+          Includes custom websites, media libraries, storage servers, game servers.<br />
+          Optimized resource management and uptime monitoring.
+        </li>
+        <li style="margin-top:1rem;">
+          <strong>Cross-Platform Minecraft Server</strong><br />
+          Modded crossplay server enabling Java/Bedrock connectivity.<br />
+          Custom server-side performance and management mods.<br />
+          Handles concurrent players with minimal lag.
+        </li>
+        <li style="margin-top:1rem;">
+          <strong>Private Media & Storage Network</strong><br />
+          Self-hosted media library with YouTube frontend alternatives.<br />
+          Secure cloud storage solution using rclone + Google Drive.<br />
+          Custom NAS setup with VPN access.
+        </li>
+        <li style="margin-top:1rem;">
+          <strong>Call of Duty: Black Ops 3 Modded Server</strong><br />
+          Custom zombie mode server with community mods.<br />
+          Server administration and mod compatibility management.<br />
+          Active player base and regular maintenance.
+        </li>
+      </ol>
+    </section>
+    <section style="margin-bottom: 2rem;">
+      <h2>Services I Offer</h2>
+      <ul>
+        <li>Server Setup & Management</li>
+        <li>Self-Hosted Solution Consulting</li>
+        <li>Network Infrastructure Design</li>
+        <li>Game Server Hosting & Maintenance</li>
+        <li>Custom Automation & Scripting</li>
+        <li>Cloud Migration & Optimization</li>
+        <li style="color:#38bdf8;font-weight:bold;">Currently offering FREE initial consultations to small businesses</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:TMOV2@email.iforgor.cc">TMOV2@email.iforgor.cc</a></li>
+        <li>Discord: <span style="color:#facc15;">TMOV2</span></li>
+        <li>GitHub: <a href="https://github.com/darkmaster420" target="_blank" rel="noopener">darkmaster420</a></li>
+      </ul>
+    </section>
+  </main>
+</Layout>
