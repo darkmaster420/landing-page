@@ -1,0 +1,164 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="TMOV2 | My Projects">
+  <main style="max-width: 900px; margin: 2rem auto; padding: 2rem;">
+    <header style="text-align: center; margin-bottom: 3rem;">
+      <h1 style="font-size: 3rem; font-weight: bold; letter-spacing: 0.04em;">My Projects</h1>
+      <p style="font-size: 1.1rem; color: #38bdf8; margin-top: 0.5rem;">
+        A showcase of my self-hosted infrastructure and automation projects
+      </p>
+    </header>
+
+    <div style="display: grid; gap: 2rem;">
+      <!-- Project 1: Fully Automated Jellyfin Stack -->
+      <article style="background: rgba(15, 23, 42, 0.6); border: 2px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #38bdf8; font-size: 1.8rem; margin-bottom: 1rem; border-bottom: none;">
+          🎬 Fully Automated Jellyfin Media Stack
+        </h2>
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          A complete end-to-end automated media management and streaming solution that handles everything from content discovery to delivery.
+        </p>
+        <h3 style="color: #facc15; font-size: 1.2rem; margin-top: 1.5rem;">Stack Components:</h3>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+          <li><strong>Jellyfin</strong> - Media server with a beautiful web interface for streaming</li>
+          <li><strong>Jellyseerr</strong> - User-friendly request management system</li>
+          <li><strong>Radarr</strong> - Automated movie collection manager</li>
+          <li><strong>Sonarr</strong> - Automated TV show collection manager</li>
+          <li><strong>Lidarr</strong> - Music collection manager</li>
+          <li><strong>Bazarr</strong> - Automated subtitle downloader</li>
+          <li><strong>JFA-Go</strong> - User account management and invitations</li>
+        </ul>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; border-radius: 4px;">
+          <strong>Key Features:</strong> Fully containerized with Docker, automated downloads, quality profiles, subtitle automation, and multi-user management with granular permissions.
+        </div>
+      </article>
+
+      <!-- Project 2: Self-Hosted Email Server -->
+      <article style="background: rgba(15, 23, 42, 0.6); border: 2px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #38bdf8; font-size: 1.8rem; margin-bottom: 1rem; border-bottom: none;">
+          📧 Self-Hosted Email Server
+        </h2>
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          Complete email infrastructure providing full control over email communications with enterprise-grade security and privacy.
+        </p>
+        <h3 style="color: #facc15; font-size: 1.2rem; margin-top: 1.5rem;">Capabilities:</h3>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+          <li>Custom domain email hosting</li>
+          <li>SMTP/IMAP/POP3 support</li>
+          <li>Spam filtering and virus protection</li>
+          <li>SPF, DKIM, and DMARC configuration</li>
+          <li>Webmail interface</li>
+          <li>Multiple domain support</li>
+        </ul>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; border-radius: 4px;">
+          <strong>Key Features:</strong> Full privacy control, no third-party data access, custom filtering rules, and reliable delivery rates with proper DNS configuration.
+        </div>
+      </article>
+
+      <!-- Project 3: Self-Hosted Game Servers -->
+      <article style="background: rgba(15, 23, 42, 0.6); border: 2px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #38bdf8; font-size: 1.8rem; margin-bottom: 1rem; border-bottom: none;">
+          🎮 Self-Hosted Game Servers
+        </h2>
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          Custom-configured game servers providing optimized multiplayer experiences for various gaming communities.
+        </p>
+        <h3 style="color: #facc15; font-size: 1.2rem; margin-top: 1.5rem;">Active Servers:</h3>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+          <li><strong>Minecraft Crossplay Server</strong> - Modded server supporting both Java and Bedrock Edition players with Geyser and Floodgate</li>
+          <li><strong>Call of Duty: Black Ops 3 Modded Server</strong> - Custom zombie mode with community mods and plugins for enhanced gameplay</li>
+        </ul>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; border-radius: 4px;">
+          <strong>Key Features:</strong> Performance optimization, automated backups, custom mod integration, anti-cheat protection, and 24/7 uptime with monitoring.
+        </div>
+      </article>
+
+      <!-- Project 4: Game Update Tracker -->
+      <article style="background: rgba(15, 23, 42, 0.6); border: 2px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #38bdf8; font-size: 1.8rem; margin-bottom: 1rem; border-bottom: none;">
+          🔔 Game Update Tracker
+        </h2>
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          Automated monitoring system that tracks game updates across multiple platforms and provides instant notifications with direct download links.
+        </p>
+        <h3 style="color: #facc15; font-size: 1.2rem; margin-top: 1.5rem;">Features:</h3>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+          <li>Real-time monitoring of 5+ gaming platforms</li>
+          <li>Custom web scraping and API integration</li>
+          <li>Push notifications via multiple channels</li>
+          <li>Direct download link generation</li>
+          <li>Version tracking and changelog aggregation</li>
+          <li>User preference management</li>
+        </ul>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; border-radius: 4px;">
+          <strong>Key Features:</strong> Never miss a game update, automated notifications, customizable tracking preferences, and historical version data.
+        </div>
+      </article>
+
+      <!-- Project 5: Self-Hosted Network -->
+      <article style="background: rgba(15, 23, 42, 0.6); border: 2px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #38bdf8; font-size: 1.8rem; margin-bottom: 1rem; border-bottom: none;">
+          🔒 Self-Hosted Network Infrastructure
+        </h2>
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          Complete network solution providing secure remote access and custom DNS management for all self-hosted services.
+        </p>
+        <h3 style="color: #facc15; font-size: 1.2rem; margin-top: 1.5rem;">Components:</h3>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+          <li><strong>VPN Server</strong> - Secure remote access to home network and services</li>
+          <li><strong>Custom DNS</strong> - Ad-blocking, custom domains, and local DNS resolution</li>
+          <li><strong>Reverse Proxy</strong> - Secure access to web services with SSL/TLS</li>
+          <li><strong>Network Monitoring</strong> - Real-time traffic analysis and alerts</li>
+        </ul>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; border-radius: 4px;">
+          <strong>Key Features:</strong> Encrypted connections, ad-blocking at network level, custom domain routing, and centralized access control for all services.
+        </div>
+      </article>
+
+      <!-- Project 6: Self-Hosted YouTube -->
+      <article style="background: rgba(15, 23, 42, 0.6); border: 2px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #38bdf8; font-size: 1.8rem; margin-bottom: 1rem; border-bottom: none;">
+          📺 Self-Hosted YouTube Alternative
+        </h2>
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          Privacy-focused YouTube frontend and video content management system providing an ad-free viewing experience with complete control.
+        </p>
+        <h3 style="color: #facc15; font-size: 1.2rem; margin-top: 1.5rem;">Features:</h3>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+          <li>Ad-free YouTube viewing experience</li>
+          <li>Privacy-respecting - no tracking or data collection</li>
+          <li>Subscription management without Google account</li>
+          <li>Video downloading and archiving</li>
+          <li>Custom playlists and favorites</li>
+          <li>Sponsor block integration</li>
+        </ul>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; border-radius: 4px;">
+          <strong>Key Features:</strong> No ads, complete privacy, offline viewing capability, and full control over your content consumption experience.
+        </div>
+      </article>
+    </div>
+
+    <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #334155; text-align: center;">
+      <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+        Interested in learning more about these projects or need help with your own infrastructure?
+      </p>
+      <a href="/" style="display: inline-block; padding: 0.75rem 2rem; background: #38bdf8; color: #0f172a; font-weight: bold; border-radius: 8px; transition: all 0.3s ease;">
+        Get in Touch
+      </a>
+    </footer>
+  </main>
+
+  <style>
+    article:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(56, 189, 248, 0.2);
+      border-color: #38bdf8;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</Layout>
